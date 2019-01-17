@@ -40,7 +40,11 @@ public class LoginServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("/empl");
 			rd.forward(request, response);
 		}
-		
+		if(request.isUserInRole("admin"))
+		{
+			RequestDispatcher rd = request.getRequestDispatcher("/admin");
+			rd.forward(request, response);
+		}
 		
 	
 	

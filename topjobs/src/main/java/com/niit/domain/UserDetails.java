@@ -20,13 +20,29 @@ public class UserDetails {
 	@SequenceGenerator(name = "user_Sequence", sequenceName = "USER_SEQ")
 	Long userId;
 	
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public User getUsr() {
+		return usr;
+	}
+
+	public void setUsr(User usr) {
+		this.usr = usr;
+	}
+
 	@OneToOne(cascade = {CascadeType.MERGE})
 	@JoinColumn(name= "user_name", 
 	referencedColumnName = "user_name")
 	User usr;
 	
 	@Column
-	DateWithTZ validDate;
+	Date validDate;
 	
 	@Column
 	Boolean status;
