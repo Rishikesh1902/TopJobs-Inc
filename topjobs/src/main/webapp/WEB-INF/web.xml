@@ -40,7 +40,16 @@
    <url-pattern>/logout</url-pattern>
  </servlet-mapping>
 
-
+<servlet>
+   <servlet-name>applyJob</servlet-name>
+   <jsp-file>/WEB-INF/views/ApplyJob.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>applyJob</servlet-name>
+   <url-pattern>/applyJob</url-pattern>
+   <url-pattern>job/applyJob</url-pattern>
+ </servlet-mapping>
+ 
 <servlet>
    <servlet-name>empjob</servlet-name>
    <jsp-file>/WEB-INF/views/ShowEmpJobs.jsp</jsp-file>  

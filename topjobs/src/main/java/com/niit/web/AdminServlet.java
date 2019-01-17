@@ -1,5 +1,8 @@
 package com.niit.web;
 
-public class AdminServlet {
+import javax.servlet.http.HttpServlet;
+
+public class AdminServlet extends HttpServlet
+{
 
 }
